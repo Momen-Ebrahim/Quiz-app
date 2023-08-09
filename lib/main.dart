@@ -97,7 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: const <Widget>[
             Text(
               'moamen ebrahim',
-              style: TextStyle(fontSize: 25, color: Colors.green),
+              style: TextStyle(
+                  fontSize: 25, color: Color.fromARGB(255, 193, 18, 161)),
             ),
           ],
         ),
