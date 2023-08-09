@@ -97,16 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: const <Widget>[
             Text(
               'moamen ebrahim',
-              style: TextStyle(fontSize: 25, color: Colors.red),
+              style: TextStyle(fontSize: 25, color: Colors.green),
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
