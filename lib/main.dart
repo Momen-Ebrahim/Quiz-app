@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'first.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'moamen ebrahim ahmed '),
+      home: const First(),
     );
   }
 }
