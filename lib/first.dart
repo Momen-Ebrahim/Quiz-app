@@ -20,7 +20,7 @@ class First extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.3,
           ),
           Image.asset(
-            "Images/quizLogo.png",
+            "images/quizLogo.png",
             height: MediaQuery.of(context).size.height * 0.2,
           ),
           Text(
