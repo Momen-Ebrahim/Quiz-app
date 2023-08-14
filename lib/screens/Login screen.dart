@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quizprojectmoamenebrahim/screens/3.dart';
+import 'package:quizprojectmoamenebrahim/screens/quiztype.dart';
+import 'package:quizprojectmoamenebrahim/widgets/quiztype.dart';
 
 class Loginscreen extends StatelessWidget {
   const Loginscreen({super.key});
@@ -116,12 +119,16 @@ class Loginscreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
                   Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20)
-                    ),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(20)),
                     child: ElevatedButton(
                       onPressed: () {
-                        // Add login logic here
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) => const three(),
+                          ),
+                        );
                       },
                       child: Text(
                         "Login",
@@ -135,37 +142,36 @@ class Loginscreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-
                   SizedBox(height: 10),
                   Image.asset(
                     "iimages/touch-id-icon-1.jpg",
-                    height: MediaQuery.of(context).size.height * 0.1,
+                    height: MediaQuery.of(context).size.height * 0.05,
                   ),
                   Text("use touch id"),
-    Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-    Checkbox(
-    value: true,
-    onChanged: (value) {
-    // Handle checkbox state change
-    },
-    ),
-    Text(
-    "Remember Me",
-    style: TextStyle(color: Colors.black),
-    ),
-      TextButton(
-        onPressed: () {
-          // Add navigation to registration or sign-up screen here
-        },
-        child: Text(
-          "forget password?",
-          style: TextStyle(color: Colors.green),
-        ),
-      )
-    ],
-    )
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Checkbox(
+                        value: true,
+                        onChanged: (value) {
+                          // Handle checkbox state change
+                        },
+                      ),
+                      Text(
+                        "Remember Me",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          // Add navigation to registration or sign-up screen here
+                        },
+                        child: Text(
+                          "forget password?",
+                          style: TextStyle(color: Colors.green),
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             ),

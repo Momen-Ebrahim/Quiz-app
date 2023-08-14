@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:quizprojectmoamenebrahim/screens/Login%20screen.dart';
 
 class First extends StatelessWidget {
   const First({super.key});
@@ -25,26 +27,34 @@ class First extends StatelessWidget {
           ),
           Text(
             "Iti quiz app",
-            style: TextStyle(fontSize: 30,color: Colors.yellow),
+            style:
+                GoogleFonts.alegreyaSansSc(fontSize: 50, color: Colors.yellow),
           ),
-          SizedBox( height: 20,)
-          ,Text(
+          SizedBox(
+            height: 20,
+          ),
+          Text(
             "We are creative, enjoy our app",
-            style: TextStyle(fontSize: 25
-            ,color: Colors.white
+            style: GoogleFonts.pacifico(fontSize: 30, color: Colors.white),
+          ),
+          Spacer(),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => const Loginscreen(),
+                  ),
+                );
+              },
+              child: Text("start"),
+              style: ElevatedButton.styleFrom(primary: Colors.green),
             ),
-          ),            Spacer(),
-
-        Container(
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-          width: double.infinity,
-          child: ElevatedButton(onPressed: (){}, child: Text("start"),
-            style: ElevatedButton.styleFrom(
-           primary: Colors.green
-          ) ,),
-        )
+          )
         ]),
-
       ),
     );
   }
