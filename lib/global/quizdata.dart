@@ -2,60 +2,455 @@ import 'package:flutter/material.dart';
 
 List datalist=[
   {
-    "quizname":"math test",
-    "colol":Colors.blue,
-    "data":[
+    "quizname": "math test",
+    "colol": Colors.blue,
+    "data": [
       {
-        "question":"5+3",
-        "ans":["6","7","8","9"]
+        "question": "5+3",
+        "ans": [
+          {
+            "ans": "6"
+            , "score": 0
+          },
+          {
+            "ans": "7"
+            , "score": 0
+          }, {
+            "ans": "8"
+            , "score": 0
+          }, {
+            "ans": "11"
+            , "score": 1
+          },
+        ]
       },
       {
-        "question":"5-3",
-        "ans":["6","2","8","9"]
+        "question": "5-3",
+        "ans": [
+          {
+            "ans": "6"
+            , "score": 0
+          },
+          {
+            "ans": "7"
+            , "score": 0
+          }, {
+            "ans": "8"
+            , "score": 0
+          }, {
+            "ans": "2"
+            , "score": 1
+          },
+        ]
       },
       {
-        "question":"5*3",
-        "ans":["6","7","15","9"]
+        "question": "5*3",
+        "ans": [
+          {
+            "ans": "6"
+            , "score": 0
+          },
+          {
+            "ans": "7"
+            , "score": 0
+          }, {
+            "ans": "15"
+            , "score": 1
+          }, {
+            "ans": "10"
+            , "score": 0
+          },
+        ]
       }
-
     ]
   },
   {
-    "quizname":"math test",
+    "quizname":"sport test",
     "colol":Colors.yellow,
     "data":[
       {
         "question":"how many player in football team",
-        "ans":["6","7","11","9"]
+        "ans":[
+          {
+            "ans":"6"
+            ,"score":0
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"11"
+            ,"score":1
+          }, {
+            "ans":"10"
+            ,"score":0
+          },
+        ]
+
       },
+
+
       {
         "question":"how many player in basket team",
-        "ans":["6","5","8","7"]
+        "ans":[
+          {
+            "ans":"6"
+            ,"score":0
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"5"
+            ,"score":1
+          },
+        ]
+
       },
       {
         "question":"how many player in voly team",
-        "ans":["6","7","5","8"]
-      }
-
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      }, {
+        "question":"how many player in voly team",
+        "ans":[
+          {
+            "ans":"5"
+            ,"score":1
+          },
+          {
+            "ans":"7"
+            ,"score":0
+          }, {
+            "ans":"8"
+            ,"score":0
+          }, {
+            "ans":"9"
+            ,"score":0
+          },
+        ]
+      },
     ]
   },
+
   {
     "quizname":"history test",
     "colol":Colors.green,
     "data":[
       {
         "question":"when 1919 began",
-        "ans":["2002","1919","1900","2020"]
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1900"
+            ,"score":0
+          }, {
+            "ans":"1919"
+            ,"score":1
+          },
+        ]
       },
       {
         "question":"when 2war began",
-        "ans":["2002","1919","1935","2020"]
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1945"
+            ,"score":1
+          }, {
+            "ans":"1919"
+            ,"score":0
+          },
+        ]
       },
       {
         "question":"when 1war began",
-        "ans":["2002","1919","1900","2020"]
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1900"
+            ,"score":0
+          }, {
+            "ans":"1919"
+            ,"score":1
+          },
+        ]
+      },
+      {
+        "question":"when 1919 began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1900"
+            ,"score":0
+          }, {
+            "ans":"1919"
+            ,"score":1
+          },
+        ]
+      },
+      {
+        "question":"when 2war began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1945"
+            ,"score":1
+          }, {
+            "ans":"1919"
+            ,"score":0
+          },
+        ]
+      },
+      {
+        "question":"when 1war began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1900"
+            ,"score":0
+          }, {
+            "ans":"1919"
+            ,"score":1
+          },
+        ]
+      },{
+        "question":"when 1919 began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1900"
+            ,"score":0
+          }, {
+            "ans":"1919"
+            ,"score":1
+          },
+        ]
+      },
+      {
+        "question":"when 2war began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1945"
+            ,"score":1
+          }, {
+            "ans":"1919"
+            ,"score":0
+          },
+        ]
+      },
+      {
+        "question":"when 1war began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1900"
+            ,"score":0
+          }, {
+            "ans":"1919"
+            ,"score":1
+          },
+        ]
       }
-
+      ,{
+        "question":"when 2war began",
+        "ans":[
+          {
+            "ans":"2002"
+            ,"score":0
+          },
+          {
+            "ans":"1920"
+            ,"score":0
+          }, {
+            "ans":"1945"
+            ,"score":1
+          }, {
+            "ans":"1919"
+            ,"score":0
+          },
+        ]
+      },
     ]
-  }
+  },
 ];
