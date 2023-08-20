@@ -11,7 +11,7 @@ class Test extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "Test",
-          style: TextStyle(color: Colors.blueAccent, fontSize: 30),
+          style: TextStyle(color: Colors.yellow, fontSize: 30),
         ),
         backgroundColor: Colors.purple,
         actions: [
@@ -25,14 +25,18 @@ class Test extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(
-            color: Colors.red,
-            width: double.infinity,
-            height: MediaQuery.of(context).size.height * (1 / 3),
-            child: Center(
-              child: Text(
-                'Question 1: What is the Color of the Sky?',
-                style: GoogleFonts.alkalami(fontSize: 35, color: Colors.amber),
+          Padding(
+            padding: const EdgeInsets.only(top: 60,bottom: 60,),
+            child: Container(
+              color: Colors.purple,
+              width: double.infinity,
+              height: MediaQuery.of(context).size.height * (1 / 3),
+              //decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+              child: Center(
+                child: Text(
+                  'Question 1:\n What is the Color of the Sky?',
+                  style: GoogleFonts.alkalami(fontSize: 30, color: Colors.amber),
+                ),
               ),
             ),
           ),
@@ -45,8 +49,8 @@ class Test extends StatelessWidget {
                     // Navigate to the corresponding choice screen
                     Navigator.push(
                       context,
-                      MaterialPageRoute (
-                        builder: (BuildContext context) => testresolt (),
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => testresolt(),
                       ),
                     );
                   },
@@ -74,12 +78,12 @@ class ChoiceBox extends StatelessWidget {
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
-        color: Colors.blue,
+        color: Colors.purple,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Text(
         choices[choiceIndex],
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(color: Colors.yellow),
       ),
     );
   }
