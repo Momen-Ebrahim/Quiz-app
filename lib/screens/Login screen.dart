@@ -192,15 +192,15 @@ class _LoginscreenState extends State<Loginscreen> {
                               borderRadius: BorderRadius.circular(20)),
                           child: ElevatedButton(
                             onPressed: () {
-                              // if (_formKey.currentState!.validate()) {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute<void>(
-                                  builder: (BuildContext context) =>
-                                      const three(),
-                                ),
-                              );
-                              //}
+                              if (_formKey.currentState!.validate()) {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute<void>(
+                                    builder: (BuildContext context) =>
+                                        const three(),
+                                  ),
+                                );
+                              }
                             },
                             child: Text(
                               "Login",
