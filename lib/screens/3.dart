@@ -10,8 +10,7 @@ class three extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('moamen'),
-          for (int i = 0; i < 3; i++)
+          for (int i = 0; i < 6; i++)
             quiztype(
               index: i,
             ),
